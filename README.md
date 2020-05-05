@@ -6,7 +6,7 @@ The project is based on the [CheXNet model](https://stanfordmlgroup.github.io/pr
 # Citations
 Replicated pre-trained model of CheXNet:
 
-```@misc{Zech2018,
+@misc{Zech2018,
   author = {Zech, J.},
   title = {reproduce-chexnet},
   year = {2018},
@@ -14,4 +14,3 @@ Replicated pre-trained model of CheXNet:
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/jrzech/reproduce-chexnet}}
 }
-```
