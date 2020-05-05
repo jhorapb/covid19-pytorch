@@ -3,7 +3,7 @@ Application of Transfer Learning for detection of the COVID-19 disease.
 
 The project is based on the [CheXNet model](https://stanfordmlgroup.github.io/projects/chexnet/) proposed by the Standford ML Group and makes use of the Pytorch implementation found [here](https://github.com/jrzech/reproduce-chexnet) by John Zech.
 
-# Reference
+# Citations
 Replicated pre-trained model of CheXNet:
 
 ```@misc{Zech2018,
