@@ -1,0 +1,12 @@
+All of the images are chest x-rays of varying size
+
+Some of the images in the COVID-19 dataset repo were CT scans, so they couldn't be used
+Some of the images in the COVID-19 dataset repo were a side view of the lungs, so they were not used
+
+The watermarks have been removed from the COVID-19 images
+This includes left symbols, right symbols, names
+
+Some of the images are the same patient over time. So 4 images for the same patient.
+Also show COVID-19 cases of different severities- some died, some survived
+
+AR-1-2
