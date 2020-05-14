@@ -49,7 +49,7 @@ def load_checkpoint():
     # }
     #####
     
-    # Locate and load CheXNet model
+    # Locate and load pretrained CheXNet model
     pretrained_checkpoint = '../pretrained_chexnet/checkpoint'
     chexnet_checkpoint = torch.load(pretrained_checkpoint, map_location=torch.device('cpu'))
     model_tl = models.densenet121(pretrained=False)
@@ -58,11 +58,19 @@ def load_checkpoint():
     # epoch = chexnet_checkpoint['epoch']
     # loss = chexnet_checkpoint['loss']
     # LR = chexnet_checkpoint['LR']
+    
+    # Freeze the parameters for feature extraction
+    for parameter in model.parameters():
+        parameter.requires_grad = False
+
+    # If model is used for inference, then evaluate it
+    # model.eval()
+    
     del chexnet_checkpoint
     return model_tl
 
 
-def checkpoint(model, best_loss, epoch, LR):
+def save_checkpoint(model, best_loss, epoch, LR):
     """
     Saves checkpoint of torchvision model during training.
 
@@ -183,7 +191,7 @@ def train_model(
             if phase == 'val' and epoch_loss < best_loss:
                 best_loss = epoch_loss
                 best_epoch = epoch
-                checkpoint(model, best_loss, epoch, LR)
+                save_checkpoint(model, best_loss, epoch, LR)
 
             # log training and validation loss over each epoch
             if phase == 'val':
