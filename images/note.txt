@@ -1,12 +1,20 @@
-All of the images are chest x-rays of varying size
 
-Some of the images in the COVID-19 dataset repo were CT scans, so they couldn't be used
-Some of the images in the COVID-19 dataset repo were a side view of the lungs, so they were not used
+- All of the images are chest x-rays of varying size.
+- Some of the images in the COVID-19 dataset repo were CT scans, so they couldn't be used.
+- Some of the images in the COVID-19 dataset repo were a side view of the lungs, 
+so they were not used.
 
-The watermarks have been removed from the COVID-19 images
-This includes left symbols, right symbols, names
+- The watermarks have been removed from the COVID-19 images: 
+this includes left symbols, right symbols, names.
 
-Some of the images are the same patient over time. So 4 images for the same patient.
-Also show COVID-19 cases of different severities- some died, some survived
+- Some of the images are the same patient over time. So 4 images for the same patient.
+- Also show COVID-19 cases of different severities- some died, some survived.
+
+- Folders:
+1)  cleaned_up/: contains all images used for training and validation (covid, healthy and 
+    other_diseases).
+    cleaned_up/train: images for training.
+    cleaned_up/val: images for validation.
+2)  original/: contains all original images taken from the dataset sources.
 
 AR-1-2
